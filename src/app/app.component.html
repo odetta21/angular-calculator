@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>CALCULATOR BY TSWISSE NKWA ODETTA CAROLLS</h1>
+
+  <div class="base">
+    <div class="maindisplay">
+      <div class="subdisplay">{{ subDisplayText }}</div>
+      {{ mainDisplayText }}
+    </div>
+    <div class="keypad">
+      <table style="width: 100%">
+        <tr>
+          <td class="keys ackey" colspan="3" (click)="allClear()">AC</td>
+          <td class="keys ackey" colspan="1" (click)="Delete()">DEL</td>
+        </tr>
+        <tr>
+          <td class="keys numkey" (click)="pressKey('7')">7</td>
+          <td class="keys numkey" (click)="pressKey('8')">8</td>
+          <td class="keys numkey" (click)="pressKey('9')">9</td>
+          <td class="keys opkey" (click)="pressKey('x')">x</td>
+        </tr>
+        <tr>
+          <td class="keys numkey" (click)="pressKey('4')">4</td>
+          <td class="keys numkey" (click)="pressKey('5')">5</td>
+          <td class="keys numkey" (click)="pressKey('6')">6</td>
+          <td class="keys opkey" (click)="pressKey('-')">-</td>
+        </tr>
+        <tr>
+
+          <td class="keys numkey" (click)="pressKey('1')">1</td>
+          <td class="keys numkey" (click)="pressKey('2')">2</td>
+          <td class="keys numkey" (click)="pressKey('3')">3</td>
+          <td class="keys opkey" (click)="pressKey('+')">+</td>
+        </tr>
+        <tr>
+          <td class="keys numkey" (click)="pressKey('.')">.</td>
+          <td class="keys numkey" (click)="pressKey('0')">0</td>
+          <td class="keys ackey" (click)="getAnswer()">=</td>
+          <td class="keys opkey" colspan="1" (click)="pressKey('/')">/</td>
+
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
